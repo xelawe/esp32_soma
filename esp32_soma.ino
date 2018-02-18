@@ -7,9 +7,8 @@
 #include <PubSubClient.h>
 #include "cy_wifi_cfg.h"
 #include "cy_mqtt_cfg.h"
+#include "cy_soma_cfg.h"
 
-#define SOMA_ADDR "E5:46:D7:AE:93:20"
-#define SOMA_ADDR1 "D8:77:D5:4E:A9:6B"
 //  # battery
 // The remote service we wish to connect to.
 static BLEUUID servUUID_batt("0000180f-0000-1000-8000-00805f9b34fb");
