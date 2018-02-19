@@ -239,6 +239,7 @@ void setup() {
     // Attempt to connect
     if (client.connect("somaClient", mqtt_user, mqtt_pass, MQTT_LWT, 0, true, "offline")) {
       Serial.println("connected");
+      client.publish(MQTT_LWT, "online");
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
